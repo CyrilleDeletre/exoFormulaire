@@ -1,0 +1,105 @@
+:root{
+    --required: #ff0000;
+    --placeholderFocus:#af997e;
+    --placeholderFocusTxt:#ffffff;
+    --buttonHover:#7a6c59;
+    --input:#faeee0;
+    --label:
+}
+
+h1 {
+    color: var(--buttonHover);
+    text-align: center;
+    font-size: 40px;
+}
+
+form{
+    margin: auto;
+    width: 80%;
+}
+
+fieldset{
+    padding: 20px;
+    margin-bottom: 20px;
+    border: none ;
+    border: 1px solid var(--placeholderFocus);
+}
+
+legend{
+    color: var(--buttonHover);
+    font-size: 30px;
+}
+
+.inputcss {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px;
+}
+
+.inputcss div{
+    min-width: 50%;
+}
+
+.inputcss label{
+    display: block;
+    width: 80%;
+    color: var(--buttonHover);
+    font-size: 20px;
+}
+
+span{
+    color: var(--required);
+}
+
+.inputcss input{
+    width: 80%;
+    display: block;
+    margin: 0;
+    background-color: var(--input);
+    color: var(--buttonHover);
+    border: 1px solid var(--placeholderFocus);
+    border-radius: 10px;
+    outline: none;
+    padding: 10px;
+}
+
+.inputcss input::placeholder{
+    color: var(--buttonHover);
+}
+
+.inputcss input:focus{
+    color: var(--placeholderFocusTxt);
+    background-color: var(--placeholderFocus);
+}
+
+.inputcss input:focus::placeholder{
+    color: var(--placeholderFocusTxt);
+}
+
+
+button{
+    color: var(--placeholderFocusTxt);
+    background-color:var(--placeholderFocus) ;
+    border: none;
+    margin: 20px;
+    padding: 10px;
+}
+
+button:hover{
+    background-color: var(--buttonHover);
+    color: var(--placeholderFocusTxt);
+}
+
+.cgu{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px;
+    color: var(--buttonHover);
+    font-size: 20px;
+}
+
+#errorName{
+    color: red;
+}
